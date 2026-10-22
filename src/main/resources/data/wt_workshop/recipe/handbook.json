@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "result": {
+    "id": "minecraft:written_book",
+    "count": 1,
+    "components": {
+      "minecraft:written_book_content": {
+        "title": "WT Workshop Handbook",
+        "author": "WT Network",
+        "generation": 0,
+        "pages": [
+          "{\"text\": \"WT Workshop\\n\\nBuild tools from parts, level them up by using them, and fill their slots with modifiers.\\n\\nThis book: book + stick.\"}",
+          "{\"text\": \"1. Part Builder\\nThree planks over two sticks.\\n\\nBlank patterns: sticks and planks in a 2x2 checkerboard (makes 8).\"}",
+          "{\"text\": \"2. Patterns\\nPut a blank pattern in the Part Builder and click the part you want to carve. Patterns are reusable.\"}",
+          "{\"text\": \"3. Parts\\nPattern + material in the Part Builder. Wood, stone, flint, bone, bamboo, blaze rods, diamonds, string, leather, honeycomb and chain work here.\"}",
+          "{\"text\": \"4. Metal parts\\nCopper, iron, gold, rose gold, amethyst bronze and netherite must be cast in a Smeltery.\"}",
+          "{\"text\": \"5. Smeltery\\nBricks around a furnace. Add fuel and things to melt. Ores melt into double metal!\"}",
+          "{\"text\": \"Alloys mix by themselves while lit:\\n3 copper + 1 gold = rose gold\\ncopper + amethyst = amethyst bronze\\n4 scrap + 4 gold = netherite\"}",
+          "{\"text\": \"6. Casting\\nPour gold onto a pattern to make a reusable gold cast (2 ingots). Gold on any ingot makes an ingot cast.\\n\\nClick a fluid in the tank to pour it.\"}",
+          "{\"text\": \"With a cast in place the selected metal is cast into that part. With no cast, metal is cast into blocks.\"}",
+          "{\"text\": \"7. Tool Station\\nStick over a crafting table, planks on the sides and below. Put a head, handle and binding in to build a tool.\"}",
+          "{\"text\": \"Tools\\nPickaxe, axe, shovel, hoe: head + handle + binding.\\nSword: blade + handle + guard.\\nHammer, excavator, broad axe: big head + tough handle + tough binding.\"}",
+          "{\"text\": \"Heavy tools\\nHammers and excavators dig 3x3. Broad axes fell whole trees. Sneak to mine one block.\"}",
+          "{\"text\": \"8. Refitting\\nPut a tool in the Tool slot and ONE of: a new part, its head material (repairs 25% each), a modifier item, or a sponge (removes the last modifier).\"}",
+          "{\"text\": \"Worn tools\\nTools never break. At 1 durability they stop working until repaired.\"}",
+          "{\"text\": \"9. Levels\\nMining with the right tool or hitting with a sword earns XP. Each level: +1 upgrade slot and +2% stats. Levels 5 and 10: +1 ability slot.\"}",
+          "{\"text\": \"Upgrades\\nHaste: 16 redstone\\nSharpness: 16 quartz\\nReinforced: 2 obsidian\\nLuck: 32 lapis (max 3)\\nFiery: 12 blaze powder\\nKnockback: 8 slime\"}",
+          "{\"text\": \"More upgrades\\nMagnetic: compass\\nExpanded: 4 pistons (heavy tools)\\nDiamond: +500 durability\\nEmerald: +50%\\nNetherite: needs Diamond\\n\\nBlocks count 9 (quartz 4).\"}",
+          "{\"text\": \"Abilities\\nSilky: golden apple\\nAutosmelt: 4 blaze rods\\nMending: 16 bottles o' enchanting\\n\\nSilky can't mix with Luck or Autosmelt.\"}",
+          "{\"text\": \"10. Traits\\nMaterials add traits. Hold Shift over a part or tool to read them. Gold doubles XP, rose gold adds a slot, iron is magnetic...\"}"
+        ],
+        "resolved": true
+      }
+    }
+  }
+}

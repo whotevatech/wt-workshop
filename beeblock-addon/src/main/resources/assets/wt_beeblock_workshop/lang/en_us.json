@@ -1,0 +1,6 @@
+{
+  "modifier.wt_beeblock_workshop.waxed": "Waxed",
+  "modifier.wt_beeblock_workshop.waxed.desc": "Prevents %s%% of remaining wear per level; total saving caps at 90%%.",
+  "modifier.wt_beeblock_workshop.honeybound": "Honeybound",
+  "modifier.wt_beeblock_workshop.honeybound.desc": "Melee health damage applies Slowness for %s seconds. Strength follows level. Honey bottles return glass."
+}

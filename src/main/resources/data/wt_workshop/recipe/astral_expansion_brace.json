@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "ANA",
+    "DID",
+    "ACA"
+  ],
+  "key": {
+    "A": {
+      "item": "wt_workshop:amethyst_bronze_ingot"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "I": {
+      "item": "minecraft:iron_block"
+    },
+    "C": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "id": "wt_workshop:astral_expansion_brace",
+    "count": 1
+  }
+}

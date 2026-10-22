@@ -1,0 +1,471 @@
+{
+  "id": "64DF4AD2A7F23AD4",
+  "filename": "15_wt_workshop",
+  "title": "WT Workshop",
+  "group": "39AE835CCBAA3AFC",
+  "icon": {
+    "id": "wt_workshop:tool_station"
+  },
+  "order_index": 15,
+  "default_quest_shape": "circle",
+  "default_hide_dependency_lines": false,
+  "quests": [
+    {
+      "id": "6E80AEE1B72E9A54",
+      "title": "A Tool Worth Keeping",
+      "description": [
+        "Build tools from interchangeable parts, then keep improving the same tool. Parts determine material stats and traits.",
+        "Follow this chapter for your first tool, repair and modifier. Recipe lookup is available through JEI or EMI. Quest XP rewards are normal player XP; tool XP comes from using the tool.",
+        "Already assembled tools count when carried in your inventory. Check this introduction to begin."
+      ],
+      "icon": {
+        "id": "wt_workshop:tool_station"
+      },
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "661C6F09BD9AF349",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "676B6DC6F99A63D6",
+          "type": "xp",
+          "xp": 5
+        }
+      ],
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "624923810948DA1B",
+      "title": "Set Up the Workshop",
+      "description": [
+        "Craft a Part Builder and Tool Station. Carve reusable patterns and make non-metal parts in the Part Builder; assemble and refit tools at the Tool Station."
+      ],
+      "icon": {
+        "id": "wt_workshop:part_builder"
+      },
+      "dependencies": [
+        "6E80AEE1B72E9A54"
+      ],
+      "tasks": [
+        {
+          "id": "69E0D52DEAF33959",
+          "type": "item",
+          "item": {
+            "id": "wt_workshop:part_builder",
+            "count": 1
+          }
+        },
+        {
+          "id": "6048D5F88F2CAF22",
+          "type": "item",
+          "item": {
+            "id": "wt_workshop:tool_station",
+            "count": 1
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "633E2218E082E73C",
+          "type": "xp",
+          "xp": 5
+        }
+      ],
+      "x": 2.5,
+      "y": 0
+    },
+    {
+      "id": "6C4A15CFD71FD523",
+      "title": "Shape the Parts",
+      "description": [
+        "Make Pickaxe Head, Handle and Binding patterns. Each tool needs a matching set of parts; swords use a blade and guard. Patterns are reusable."
+      ],
+      "icon": {
+        "id": "wt_workshop:pickaxe_head_pattern"
+      },
+      "dependencies": [
+        "624923810948DA1B"
+      ],
+      "tasks": [
+        {
+          "id": "6A47B805C66D266C",
+          "type": "item",
+          "item": {
+            "id": "wt_workshop:pickaxe_head_pattern",
+            "count": 1
+          }
+        },
+        {
+          "id": "6A5A4F08FD24999F",
+          "type": "item",
+          "item": {
+            "id": "wt_workshop:handle_pattern",
+            "count": 1
+          }
+        },
+        {
+          "id": "6F4849C16D12CBAF",
+          "type": "item",
+          "item": {
+            "id": "wt_workshop:binding_pattern",
+            "count": 1
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "63B93F7AAE55A22E",
+          "type": "xp",
+          "xp": 5
+        }
+      ],
+      "x": 5,
+      "y": 0
+    },
+    {
+      "id": "6C1E4EA823CAB4D6",
+      "title": "Your First Working Pick",
+      "description": [
+        "Build a pickaxe head, handle and binding from materials available to you, then assemble them in the Tool Station. Wood and other non-metal starter parts do not require a smeltery.",
+        "Only a properly assembled Workshop pickaxe counts. Carry an existing assembled pickaxe to complete this step; making another is unnecessary."
+      ],
+      "icon": {
+        "id": "wt_workshop:pickaxe"
+      },
+      "dependencies": [
+        "6C4A15CFD71FD523"
+      ],
+      "tasks": [
+        {
+          "id": "67C33D2AA6B131E8",
+          "type": "advancement",
+          "advancement": "wt_workshop:workshop/pickaxe",
+          "criterion": "",
+          "icon": {
+            "id": "wt_workshop:pickaxe"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6421571F08F6727A",
+          "type": "xp",
+          "xp": 5
+        }
+      ],
+      "x": 7.5,
+      "y": 0
+    },
+    {
+      "id": "66AB120F7AF9D402",
+      "title": "Repair, Keep the Progress",
+      "description": [
+        "Use your tool until it has some wear. Put it in the Tool Station tool slot, then add a material matching its head. Take the repaired result.",
+        "Repairs preserve materials, name, XP, modifiers and expansions. This step tracks a real repair performed after installing WT Workshop 0.6."
+      ],
+      "icon": {
+        "id": "minecraft:iron_ingot"
+      },
+      "dependencies": [
+        "6C1E4EA823CAB4D6"
+      ],
+      "tasks": [
+        {
+          "id": "6E7610986F73EE3B",
+          "type": "advancement",
+          "advancement": "wt_workshop:workshop/repair",
+          "criterion": "",
+          "icon": {
+            "id": "minecraft:iron_ingot"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6BD4AD020FC71CBA",
+          "type": "xp",
+          "xp": 5
+        }
+      ],
+      "x": 10,
+      "y": 0
+    },
+    {
+      "id": "665D74C35742CE3D",
+      "title": "A Familiar Tool",
+      "description": [
+        "Earn tool XP by mining suitable blocks or using a Workshop sword in combat. Reach level 1 on any assembled Workshop tool.",
+        "By default each level gives one upgrade slot and 2% mining speed and durability. Levels 5 and 10 also grant one ability slot. Pack configuration can change these values."
+      ],
+      "icon": {
+        "id": "minecraft:experience_bottle"
+      },
+      "dependencies": [
+        "6C1E4EA823CAB4D6"
+      ],
+      "tasks": [
+        {
+          "id": "62185916AA2AAB8C",
+          "type": "advancement",
+          "advancement": "wt_workshop:workshop/level_1",
+          "criterion": "",
+          "icon": {
+            "id": "minecraft:experience_bottle"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6DB2F5FEEF6D91A2",
+          "type": "xp",
+          "xp": 5
+        }
+      ],
+      "x": 7.5,
+      "y": 2.5
+    },
+    {
+      "id": "60635C65D8377FB2",
+      "title": "A Touch of Redstone",
+      "description": [
+        "Apply redstone in the Tool Station to complete Haste I. Default cost: 16 redstone points and one upgrade slot; a redstone block contributes nine points.",
+        "Small batches save partial progress. The station shows the amount consumed and the resulting stats; hover below its table for full details. A completed Haste level also adds a red accent to the tool."
+      ],
+      "icon": {
+        "id": "minecraft:redstone"
+      },
+      "dependencies": [
+        "6C1E4EA823CAB4D6"
+      ],
+      "tasks": [
+        {
+          "id": "65DE7295AD33F5D5",
+          "type": "advancement",
+          "advancement": "wt_workshop:workshop/haste",
+          "criterion": "",
+          "icon": {
+            "id": "minecraft:redstone"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "631D31066175A88B",
+          "type": "xp",
+          "xp": 5
+        }
+      ],
+      "x": 10,
+      "y": 2.5
+    },
+    {
+      "id": "673C94712930649A",
+      "title": "From Ingot to Part",
+      "description": [
+        "Craft the Workshop Smeltery. Add fuel, melt metal, and use casts for metal parts. One ingot equals 90 internal molten units.",
+        "Check the casting recipes for each part cost. Gold cast-making consumes its template; finished casts are reusable."
+      ],
+      "icon": {
+        "id": "wt_workshop:smeltery"
+      },
+      "dependencies": [
+        "624923810948DA1B"
+      ],
+      "tasks": [
+        {
+          "id": "638D429270769190",
+          "type": "item",
+          "item": {
+            "id": "wt_workshop:smeltery",
+            "count": 1
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "62567071639EA7A1",
+          "type": "xp",
+          "xp": 5
+        }
+      ],
+      "x": 2.5,
+      "y": -2.5
+    },
+    {
+      "id": "67CDAADC44543552",
+      "title": "Your First Metal Head",
+      "description": [
+        "Make or obtain a Pickaxe Head cast and cast a metal pickaxe head. Use the head in the Tool Station to replace the head on an existing pickaxe while preserving its progress.",
+        "This task detects ownership of the cast; try the casting and replacement steps yourself."
+      ],
+      "icon": {
+        "id": "wt_workshop:pickaxe_head_cast"
+      },
+      "dependencies": [
+        "673C94712930649A"
+      ],
+      "tasks": [
+        {
+          "id": "6DBA3A1AD76B4793",
+          "type": "item",
+          "item": {
+            "id": "wt_workshop:pickaxe_head_cast",
+            "count": 1
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6963066E6D23A3B3",
+          "type": "xp",
+          "xp": 5
+        }
+      ],
+      "x": 5,
+      "y": -2.5
+    },
+    {
+      "id": "6066FE5A361360F1",
+      "title": "Work a Wider Area",
+      "description": [
+        "Assemble a Hammer, Excavator or Broad Axe using its matching larger parts. Heavy tools consume more materials and durability.",
+        "The Hammer and Excavator support area mining. Check the tool tooltip and try them in a safe area. Carry any assembled heavy tool to complete this step."
+      ],
+      "icon": {
+        "id": "wt_workshop:hammer"
+      },
+      "dependencies": [
+        "67CDAADC44543552",
+        "6C1E4EA823CAB4D6"
+      ],
+      "tasks": [
+        {
+          "id": "629F1CD2E53AD1B5",
+          "type": "advancement",
+          "advancement": "wt_workshop:workshop/heavy_tool",
+          "criterion": "",
+          "icon": {
+            "id": "wt_workshop:hammer"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "63FB04EC1189E867",
+          "type": "xp",
+          "xp": 5
+        }
+      ],
+      "x": 7.5,
+      "y": -2.5
+    },
+    {
+      "id": "6AE0C05E91B6648D",
+      "title": "Room for an Ability",
+      "description": [
+        "Reach level 5 on a Workshop tool. By default this adds your first ability slot from leveling, alongside the upgrade slot for that level.",
+        "Ability slots support effects such as Mending, Silky or Siphoning. They are separate from upgrade slots, and ingredients must still be supplied."
+      ],
+      "icon": {
+        "id": "minecraft:enchanted_book"
+      },
+      "dependencies": [
+        "665D74C35742CE3D"
+      ],
+      "tasks": [
+        {
+          "id": "6791B92B4EEAF549",
+          "type": "advancement",
+          "advancement": "wt_workshop:workshop/level_5",
+          "criterion": "",
+          "icon": {
+            "id": "minecraft:enchanted_book"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "64B616A94A056784",
+          "type": "xp",
+          "xp": 5
+        }
+      ],
+      "x": 10,
+      "y": 5
+    },
+    {
+      "id": "604E278D75C2C5A6",
+      "title": "Make More Room",
+      "description": [
+        "Craft a Copper Expansion Brace and apply it to an assembled tool. Then work toward Gilded and Astral in order.",
+        "Each tier is single use and permanent. Default bonus: one upgrade slot per tier; Astral also adds one ability slot. Expansions cost no existing slot. Sponge removes modifiers while retaining expansions."
+      ],
+      "icon": {
+        "id": "wt_workshop:copper_expansion_brace"
+      },
+      "dependencies": [
+        "60635C65D8377FB2"
+      ],
+      "tasks": [
+        {
+          "id": "657DCEAE4BC84BA9",
+          "type": "advancement",
+          "advancement": "wt_workshop:workshop/expansion",
+          "criterion": "",
+          "icon": {
+            "id": "wt_workshop:copper_expansion_brace"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6F738F5CD2404ED5",
+          "type": "xp",
+          "xp": 5
+        }
+      ],
+      "x": 12.5,
+      "y": 2.5
+    },
+    {
+      "id": "6C14C474D72042AF",
+      "title": "An Old Friend",
+      "description": [
+        "Reach level 10 on one Workshop tool. Under default settings, leveling has now supplied ten upgrade slots, two ability slots and 20% mining speed and durability.",
+        "Keep tuning its materials and modifiers to suit your work. The maximum level and bonuses can be changed by the pack."
+      ],
+      "icon": {
+        "id": "wt_workshop:sword"
+      },
+      "dependencies": [
+        "6AE0C05E91B6648D",
+        "66AB120F7AF9D402",
+        "60635C65D8377FB2"
+      ],
+      "tasks": [
+        {
+          "id": "6E7BCCBD9411A2A4",
+          "type": "advancement",
+          "advancement": "wt_workshop:workshop/level_10",
+          "criterion": "",
+          "icon": {
+            "id": "wt_workshop:sword"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "619F60504386D5F2",
+          "type": "xp",
+          "xp": 25
+        }
+      ],
+      "x": 12.5,
+      "y": 5
+    }
+  ]
+}

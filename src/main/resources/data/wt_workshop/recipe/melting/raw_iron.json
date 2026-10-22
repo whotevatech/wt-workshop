@@ -1,0 +1,10 @@
+{
+  "type": "wt_workshop:melting",
+  "ingredient": {
+    "item": "minecraft:raw_iron"
+  },
+  "molten": "iron",
+  "amount": 90,
+  "time": 150,
+  "ore": true
+}

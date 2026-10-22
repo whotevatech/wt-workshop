@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+[[mods]]
+modId="wt_beeblock_workshop"
+version="0.1.0-beta.1"
+displayName="WT BeeBlock Workshop"
+authors="WT Network"
+logoFile="logo.png"
+description='''Wax and honey modifiers for modular Workshop tools.'''
+[[dependencies.wt_beeblock_workshop]]
+modId="wt_workshop"
+type="required"
+versionRange="[0.7.0-beta.1,0.8.0-alpha)"
+ordering="AFTER"
+side="BOTH"
+[[dependencies.wt_beeblock_workshop]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.wt_beeblock_workshop]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.209,21.2)"
+ordering="NONE"
+side="BOTH"

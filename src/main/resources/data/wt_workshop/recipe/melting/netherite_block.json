@@ -1,0 +1,9 @@
+{
+  "type": "wt_workshop:melting",
+  "ingredient": {
+    "item": "minecraft:netherite_block"
+  },
+  "molten": "netherite",
+  "amount": 810,
+  "time": 600
+}

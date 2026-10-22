@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:honey_bottle",
+    {
+      "id": "forestry:honey_drop",
+      "required": false
+    }
+  ]
+}

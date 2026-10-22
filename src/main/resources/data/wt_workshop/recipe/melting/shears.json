@@ -1,0 +1,9 @@
+{
+  "type": "wt_workshop:melting",
+  "ingredient": {
+    "item": "minecraft:shears"
+  },
+  "molten": "iron",
+  "amount": 180,
+  "time": 100
+}

@@ -1,0 +1,17 @@
+{
+  "type": "wt_workshop:alloying",
+  "inputs": [
+    {
+      "molten": "copper",
+      "amount": 10
+    },
+    {
+      "molten": "amethyst",
+      "amount": 10
+    }
+  ],
+  "result": {
+    "molten": "amethyst_bronze",
+    "amount": 10
+  }
+}

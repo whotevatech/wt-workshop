@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+[[mods]]
+modId="wt_workshop"
+version="0.7.0-beta.1"
+displayName="WT Workshop"
+authors="WT Network"
+logoFile="logo.png"
+description='''Build modular tools from parts, melt and cast metals in a Smeltery, and level your tools up with traits and modifiers.'''
+
+[[dependencies.wt_workshop]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.209,21.2)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.wt_workshop]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="BOTH"

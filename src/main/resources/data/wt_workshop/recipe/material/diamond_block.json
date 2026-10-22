@@ -1,0 +1,8 @@
+{
+  "type": "wt_workshop:material",
+  "ingredient": {
+    "item": "minecraft:diamond_block"
+  },
+  "material": "diamond",
+  "value": 9
+}

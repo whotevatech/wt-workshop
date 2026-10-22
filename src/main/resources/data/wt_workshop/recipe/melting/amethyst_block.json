@@ -1,0 +1,9 @@
+{
+  "type": "wt_workshop:melting",
+  "ingredient": {
+    "item": "minecraft:amethyst_block"
+  },
+  "molten": "amethyst",
+  "amount": 360,
+  "time": 240
+}

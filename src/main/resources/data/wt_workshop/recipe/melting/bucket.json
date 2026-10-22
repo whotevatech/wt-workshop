@@ -1,0 +1,9 @@
+{
+  "type": "wt_workshop:melting",
+  "ingredient": {
+    "item": "minecraft:bucket"
+  },
+  "molten": "iron",
+  "amount": 270,
+  "time": 120
+}

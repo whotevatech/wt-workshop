@@ -1,0 +1,9 @@
+{
+  "type": "wt_workshop:melting",
+  "ingredient": {
+    "item": "minecraft:gold_nugget"
+  },
+  "molten": "gold",
+  "amount": 10,
+  "time": 20
+}

@@ -1,0 +1,9 @@
+{
+  "type": "wt_workshop:melting",
+  "ingredient": {
+    "item": "wt_workshop:rose_gold_ingot"
+  },
+  "molten": "rose_gold",
+  "amount": 90,
+  "time": 100
+}

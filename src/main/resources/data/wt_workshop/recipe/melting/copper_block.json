@@ -1,0 +1,9 @@
+{
+  "type": "wt_workshop:melting",
+  "ingredient": {
+    "item": "minecraft:copper_block"
+  },
+  "molten": "copper",
+  "amount": 810,
+  "time": 400
+}

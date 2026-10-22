@@ -1,0 +1,9 @@
+{
+  "type": "wt_workshop:melting",
+  "ingredient": {
+    "item": "minecraft:iron_axe"
+  },
+  "molten": "iron",
+  "amount": 270,
+  "time": 120
+}

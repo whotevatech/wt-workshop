@@ -1,0 +1,9 @@
+{
+  "type": "wt_workshop:melting",
+  "ingredient": {
+    "item": "minecraft:iron_nugget"
+  },
+  "molten": "iron",
+  "amount": 10,
+  "time": 20
+}

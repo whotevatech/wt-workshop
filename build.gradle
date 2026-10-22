@@ -1,0 +1,31 @@
+plugins { id 'java-library'; id 'net.neoforged.moddev' version '2.0.148' }
+version = '0.7.0-beta.1'
+group = 'net.wtworkshop'
+base { archivesName = 'wt-workshop' }
+java { toolchain { languageVersion = JavaLanguageVersion.of(21) }; withSourcesJar() }
+neoForge { version = '21.1.263'; runs { gameTestServer { type = "gameTestServer"; systemProperty "neoforge.enabledGameTestNamespaces", "wt_workshop" }; client { client(); if(project.hasProperty('workshopCapture')) { systemProperty 'wt_workshop.capture', project.property('workshopCapture'); systemProperty 'wt_workshop.previewMode', project.findProperty('workshopPreviewMode') ?: 'station'; programArguments.addAll '--quickPlaySingleplayer', 'WorkshopPreview', '--width', '1280', '--height', '900' } }; server { server(); programArgument '--nogui' } }; mods { wt_workshop { sourceSet sourceSets.main } } }
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+
+tasks.named("jar") { exclude("net/wtworkshop/gametest/**"); exclude("data/wt_workshop/structure/**") }
+
+repositories { maven { url='https://maven.terraformersmc.com/releases/' }; maven { url='https://maven.blamejared.com/' } }
+dependencies {
+ compileOnly 'dev.emi:emi-neoforge:1.1.24+1.21.1'
+ compileOnly 'mezz.jei:jei-1.21.1-neoforge:19.21.0.247'
+ if(project.findProperty('viewer') in ['emi','both']) runtimeOnly 'dev.emi:emi-neoforge:1.1.24+1.21.1'
+ if(project.findProperty('viewer') in ['jei','both']) runtimeOnly "mezz.jei:jei-1.21.1-neoforge:${project.findProperty('jeiVersion') ?: '19.21.0.247'}"
+}
+
+// Optional local FTB runtime for isolated quest chapter validation.
+if(project.hasProperty('questModsDir')) dependencies { runtimeOnly fileTree(dir:project.property('questModsDir'),include:['architectury-*.jar','ftb-library-neoforge-*.jar','ftb-teams-neoforge-*.jar','ftb-quests-neoforge-*.jar','ftb-filter-system-neoforge-*.jar']) }
+
+sourceSets { beeAddon { java.srcDir 'beeblock-addon/src/main/java'; resources.srcDir 'beeblock-addon/src/main/resources'; compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath; runtimeClasspath += sourceSets.main.runtimeClasspath } }
+tasks.register('beeAddonJar',Jar) { dependsOn tasks.named('beeAddonClasses'); archiveBaseName='wt-beeblock-workshop'; archiveVersion='0.1.0-beta.1'; from sourceSets.beeAddon.output; exclude('net/wtworkshop/beeblock/gametest/**') }
+tasks.named('build') { dependsOn tasks.named('beeAddonJar') }
+if(project.hasProperty('withBeeAddon')) neoForge.mods { wt_beeblock_workshop { sourceSet sourceSets.beeAddon } }
+
+if(project.hasProperty('beeModsDir')) dependencies { runtimeOnly fileTree(dir:project.property('beeModsDir'),include:['forestry-*.jar','Patchouli-*.jar']) }
+
+// Public JARs carry their own license and attribution notices.
+tasks.named('jar') { from('LICENSE'); from('NOTICE-THIRD-PARTY.md') }
+tasks.named('beeAddonJar') { from('LICENSE'); from('NOTICE-THIRD-PARTY.md') }

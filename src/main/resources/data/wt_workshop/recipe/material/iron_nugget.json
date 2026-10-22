@@ -1,0 +1,8 @@
+{
+  "type": "wt_workshop:material",
+  "ingredient": {
+    "item": "minecraft:iron_nugget"
+  },
+  "material": "iron",
+  "needed": 9
+}

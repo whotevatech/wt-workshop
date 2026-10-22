@@ -1,0 +1,17 @@
+{
+  "type": "wt_workshop:alloying",
+  "inputs": [
+    {
+      "molten": "copper",
+      "amount": 30
+    },
+    {
+      "molten": "gold",
+      "amount": 10
+    }
+  ],
+  "result": {
+    "molten": "rose_gold",
+    "amount": 40
+  }
+}

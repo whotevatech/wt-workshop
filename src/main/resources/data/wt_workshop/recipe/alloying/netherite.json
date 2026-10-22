@@ -1,0 +1,17 @@
+{
+  "type": "wt_workshop:alloying",
+  "inputs": [
+    {
+      "molten": "debris",
+      "amount": 40
+    },
+    {
+      "molten": "gold",
+      "amount": 40
+    }
+  ],
+  "result": {
+    "molten": "netherite",
+    "amount": 10
+  }
+}

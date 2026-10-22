@@ -1,0 +1,9 @@
+{
+  "type": "wt_workshop:melting",
+  "ingredient": {
+    "item": "minecraft:golden_pickaxe"
+  },
+  "molten": "gold",
+  "amount": 270,
+  "time": 120
+}

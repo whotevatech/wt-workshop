@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "wt_workshop:block/tool_station"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "wt_workshop:melting",
+  "ingredient": {
+    "item": "minecraft:netherite_hoe"
+  },
+  "molten": "netherite",
+  "amount": 90,
+  "time": 200
+}

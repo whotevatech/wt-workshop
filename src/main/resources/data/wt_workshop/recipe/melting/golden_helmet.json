@@ -1,0 +1,9 @@
+{
+  "type": "wt_workshop:melting",
+  "ingredient": {
+    "item": "minecraft:golden_helmet"
+  },
+  "molten": "gold",
+  "amount": 450,
+  "time": 160
+}

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WT BeeBlock Workshop – wax and honey modifiers</title>
+<meta name="description" content="WT BeeBlock Workshop: an optional WT Workshop addon adding Waxed durability protection and Honeybound slowing hits, using honeycomb, honey and bee-mod ingredients.">
+<meta property="og:title" content="WT BeeBlock Workshop">
+<meta property="og:image" content="img/icon-beeblock.png">
+<link rel="icon" href="img/icon-beeblock.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="img/icon-workshop.png" alt="">WT Workshop</a>
+    <div class="links">
+      <a href="index.html">Base mod</a>
+      <a href="#waxed">Waxed</a>
+      <a href="#honeybound">Honeybound</a>
+      <a href="#config">Config</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <img class="icon" src="img/icon-beeblock.png" alt="WT BeeBlock Workshop icon">
+    <div>
+      <h1>WT BeeBlock Workshop</h1>
+      <p class="tag">A little help from the hive.</p>
+      <p>An optional addon for <a href="index.html">WT Workshop</a> with two configurable modifiers made from wax and honey. Each has its own look on the tool, station previews and recipe-viewer pages. No new blocks or bees, and vanilla ingredients work, so it fits any pack.</p>
+      <div class="badges">
+        <span class="badge beta">Public beta 0.1.0</span>
+        <span class="badge">Needs WT Workshop 0.7.x</span>
+        <span class="badge">Minecraft 1.21.1</span>
+        <span class="badge">NeoForge</span>
+        <span class="badge">MIT</span>
+      </div>
+      <div class="buttons">
+        <a class="btn primary" href="https://github.com/whotevatech/wt-workshop/releases/latest">Download</a>
+        <a class="btn ghost" href="index.html">WT Workshop</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section>
+  <div class="wrap">
+    <div class="shots" style="grid-template-columns: 1fr 1fr">
+      <figure><img src="img/bee-honeybound.png" alt="Tool Station adding Honeybound to an iron sword" loading="lazy"><figcaption>Honeybound previewed at the Tool Station.</figcaption></figure>
+      <figure><img src="img/bee-accents.png" alt="Base, Waxed, Honeybound and both accents on swords and axes" loading="lazy"><figcaption>Tool accents: base, Waxed, Honeybound and both.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="waxed">
+  <div class="wrap">
+    <h2>Waxed</h2>
+    <div class="grid two">
+      <div class="card">
+        <h3>Ingredients</h3>
+        <p><b>8 per level</b>, in any mix: vanilla Honeycomb, Forestry Beeswax or Productive Bees Wax.</p>
+        <p>Each level uses <b>one upgrade slot</b>. Up to level III.</p>
+      </div>
+      <div class="card">
+        <h3>Effect</h3>
+        <p>Each level prevents <b>10% of remaining wear</b>. It stacks with Reinforced and material traits, but total protection is capped at 90%.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="honeybound">
+  <div class="wrap">
+    <h2>Honeybound</h2>
+    <div class="grid two">
+      <div class="card">
+        <h3>Ingredients</h3>
+        <p><b>8 per level</b>, in any mix: vanilla Honey Bottles or Forestry Honey Drops. Bottles give you the glass back.</p>
+        <p>Each level uses <b>one ability slot</b>. Up to level II. Swords, axes and broad axes.</p>
+      </div>
+      <div class="card">
+        <h3>Effect</h3>
+        <p>Melee hits that deal real health damage apply <b>Slowness for 2 seconds</b>, with strength equal to the level. One-second shared cooldown. Players aren't affected by default, and absorbed or blocked hits don't trigger it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="config">
+  <div class="wrap">
+    <h2>Fits your pack</h2>
+    <div class="grid two">
+      <div class="card">
+        <h3>Config</h3>
+        <p><code>serverconfig/wt_beeblock_workshop-server.toml</code> controls max levels, wax protection, honey duration, cooldown and PvP. Max level 0 turns a modifier off without wiping existing tools.</p>
+      </div>
+      <div class="card">
+        <h3>Ingredient tags</h3>
+        <p><code>wt_beeblock_workshop:wax</code> and <code>wt_beeblock_workshop:honey</code>. Forestry and Productive Bees entries are optional and simply ignored when those mods aren't installed.</p>
+      </div>
+    </div>
+    <p class="note"><strong>Install:</strong> WT Workshop 0.7.x plus this addon, on client and server. The addon source lives in <a href="https://github.com/whotevatech/wt-workshop/tree/main/beeblock-addon">beeblock-addon/</a> and is the worked example for the <a href="https://github.com/whotevatech/wt-workshop/blob/main/ADDON-API.md">addon API</a>.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>WT BeeBlock Workshop by WT Network · MIT licence · Not affiliated with Mojang, Microsoft, Forestry or Productive Bees.</span>
+    <span><a href="index.html">WT Workshop</a> · <a href="https://github.com/whotevatech/wt-workshop/issues">Issues</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

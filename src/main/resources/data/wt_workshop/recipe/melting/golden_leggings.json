@@ -1,0 +1,9 @@
+{
+  "type": "wt_workshop:melting",
+  "ingredient": {
+    "item": "minecraft:golden_leggings"
+  },
+  "molten": "gold",
+  "amount": 630,
+  "time": 200
+}

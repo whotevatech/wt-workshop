@@ -1,0 +1,9 @@
+{
+  "type": "wt_workshop:melting",
+  "ingredient": {
+    "item": "minecraft:iron_chestplate"
+  },
+  "molten": "iron",
+  "amount": 720,
+  "time": 220
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:honeycomb",
+    {
+      "id": "forestry:beeswax",
+      "required": false
+    },
+    {
+      "id": "productivebees:wax",
+      "required": false
+    }
+  ]
+}

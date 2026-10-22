@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "wt_workshop:item/transparent",
+    "layer1": "wt_workshop:item/transparent",
+    "layer2": "wt_workshop:item/transparent",
+    "layer3": "wt_workshop:item/hammer_sharpness"
+  }
+}

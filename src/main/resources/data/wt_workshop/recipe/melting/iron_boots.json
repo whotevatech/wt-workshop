@@ -1,0 +1,9 @@
+{
+  "type": "wt_workshop:melting",
+  "ingredient": {
+    "item": "minecraft:iron_boots"
+  },
+  "molten": "iron",
+  "amount": 360,
+  "time": 140
+}

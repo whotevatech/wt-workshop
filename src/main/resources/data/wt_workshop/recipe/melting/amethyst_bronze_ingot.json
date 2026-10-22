@@ -1,0 +1,9 @@
+{
+  "type": "wt_workshop:melting",
+  "ingredient": {
+    "item": "wt_workshop:amethyst_bronze_ingot"
+  },
+  "molten": "amethyst_bronze",
+  "amount": 90,
+  "time": 100
+}

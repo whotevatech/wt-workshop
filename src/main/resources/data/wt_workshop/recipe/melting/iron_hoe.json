@@ -1,0 +1,9 @@
+{
+  "type": "wt_workshop:melting",
+  "ingredient": {
+    "item": "minecraft:iron_hoe"
+  },
+  "molten": "iron",
+  "amount": 180,
+  "time": 100
+}

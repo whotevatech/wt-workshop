@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "wt_workshop:tool_station",
+    "wt_workshop:part_builder"
+  ]
+}

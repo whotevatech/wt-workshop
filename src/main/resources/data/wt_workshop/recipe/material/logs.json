@@ -1,0 +1,8 @@
+{
+  "type": "wt_workshop:material",
+  "ingredient": {
+    "tag": "minecraft:logs"
+  },
+  "material": "wood",
+  "value": 4
+}

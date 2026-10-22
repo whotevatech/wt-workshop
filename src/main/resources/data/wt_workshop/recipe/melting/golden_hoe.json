@@ -1,0 +1,9 @@
+{
+  "type": "wt_workshop:melting",
+  "ingredient": {
+    "item": "minecraft:golden_hoe"
+  },
+  "molten": "gold",
+  "amount": 180,
+  "time": 100
+}

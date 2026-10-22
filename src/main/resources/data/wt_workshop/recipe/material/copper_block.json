@@ -1,0 +1,8 @@
+{
+  "type": "wt_workshop:material",
+  "ingredient": {
+    "item": "minecraft:copper_block"
+  },
+  "material": "copper",
+  "value": 9
+}

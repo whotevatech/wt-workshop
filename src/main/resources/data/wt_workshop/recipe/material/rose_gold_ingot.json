@@ -1,0 +1,7 @@
+{
+  "type": "wt_workshop:material",
+  "ingredient": {
+    "item": "wt_workshop:rose_gold_ingot"
+  },
+  "material": "rose_gold"
+}

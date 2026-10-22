@@ -1,0 +1,9 @@
+{
+  "type": "wt_workshop:melting",
+  "ingredient": {
+    "item": "minecraft:golden_chestplate"
+  },
+  "molten": "gold",
+  "amount": 720,
+  "time": 220
+}

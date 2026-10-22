@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WT Workshop – modular tools for NeoForge 1.21.1</title>
+<meta name="description" content="WT Workshop: build modular tools from parts, melt and cast metals in a Smeltery, and level your tools up with material traits and modifiers. NeoForge 1.21.1.">
+<meta property="og:title" content="WT Workshop">
+<meta property="og:description" content="Modular tools, a Smeltery, material traits, tool levels and modifiers for Minecraft 1.21.1 (NeoForge).">
+<meta property="og:image" content="img/icon-workshop.png">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="img/icon-workshop.png" alt="">WT Workshop</a>
+    <div class="links">
+      <a href="#start">Getting started</a>
+      <a href="#tools">Tools</a>
+      <a href="#materials">Materials</a>
+      <a href="#smeltery">Smeltery</a>
+      <a href="#modifiers">Modifiers</a>
+      <a href="beeblock.html">BeeBlock addon</a>
+      <a href="#packs">Packs &amp; addons</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <img class="icon" src="img/icon-workshop.png" alt="WT Workshop icon">
+    <div>
+      <h1>WT Workshop</h1>
+      <p class="tag">Build a tool worth keeping.</p>
+      <p>Modular tools built from interchangeable heads, handles and bindings. Pick materials for their stats and traits, cast metal parts in a Smeltery, then keep improving your tools by using them: they gain levels, slots and modifiers.</p>
+      <div class="badges">
+        <span class="badge beta">Public beta 0.7.0</span>
+        <span class="badge">Minecraft 1.21.1</span>
+        <span class="badge">NeoForge 21.1.209+</span>
+        <span class="badge">Java 21</span>
+        <span class="badge">Client &amp; server</span>
+        <span class="badge">MIT</span>
+      </div>
+      <div class="buttons">
+        <a class="btn primary" href="https://github.com/whotevatech/wt-workshop/releases/latest">Download</a>
+        <a class="btn ghost" href="https://github.com/whotevatech/wt-workshop">Source on GitHub</a>
+        <a class="btn ghost" href="https://github.com/whotevatech/wt-workshop/issues">Report a bug</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section>
+  <div class="wrap">
+    <div class="shots">
+      <figure><img src="img/station-modifier.png" alt="Tool Station adding Haste to an iron pickaxe" loading="lazy"><figcaption>Every change is previewed before you commit: stats, cost and slots.</figcaption></figure>
+      <figure><img src="img/station-repair.png" alt="Tool Station repairing a pickaxe with iron ingots" loading="lazy"><figcaption>Repair with the head's own material.</figcaption></figure>
+      <figure><img src="img/station-expansion.png" alt="Tool Station applying a Copper Expansion Brace" loading="lazy"><figcaption>Expansion braces permanently add slots.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="start">
+  <div class="wrap">
+    <h2>Getting started</h2>
+    <p class="lead">Three blocks do all the work. Craft a book with a stick for the in-game handbook. JEI or EMI (optional) show every recipe, melting and casting step.</p>
+    <div class="grid three">
+      <div class="card">
+        <span class="step">1 · Part Builder</span>
+        <h3>Patterns &amp; parts</h3>
+        <p>3 planks over 2 sticks. Put in a blank pattern and click the part you want to carve. Patterns are reusable.</p>
+        <p>Pattern + material makes a part: wood, stone, flint, bone, bamboo, blaze rods, diamonds, string, leather, honeycomb, chain.</p>
+      </div>
+      <div class="card">
+        <span class="step">2 · Smeltery</span>
+        <h3>Metal parts</h3>
+        <p>Bricks around a furnace, glass on top. Burns any furnace fuel. Ores melt into <strong>double</strong> metal.</p>
+        <p>Metals (copper, iron, gold, alloys, netherite) are cast into parts with gold casts.</p>
+      </div>
+      <div class="card">
+        <span class="step">3 · Tool Station</span>
+        <h3>Assemble &amp; refit</h3>
+        <p>A stick over a crafting table, with planks at the sides and below. Three parts make a tool.</p>
+        <p>Put a tool in to swap a part, repair it, add a modifier, or remove one with a sponge.</p>
+      </div>
+    </div>
+    <p class="note"><strong>Tools never break.</strong> At 1 durability a tool is <em>worn</em>: no drops and no damage bonus, and it mines at hand speed until you repair it.</p>
+  </div>
+</section>
+
+<section id="tools">
+  <div class="wrap">
+    <h2>Tools</h2>
+    <p class="lead">Every tool is one head, one handle and one binding (swords use a guard). Damage, speed, durability and harvest tier come from the parts.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Tool</th><th>Parts</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Pickaxe · Axe · Shovel · Hoe</td><td>head + handle + binding</td><td>Axes strip logs, shovels make paths, hoes till.</td></tr>
+        <tr><td>Sword</td><td>blade + handle + guard</td><td>Sweeping attacks; cuts cobwebs.</td></tr>
+        <tr><td>Hammer</td><td>hammer head + tough handle + tough binding</td><td>Mines 3×3 (5×5 and 7×7 with Expanded).</td></tr>
+        <tr><td>Excavator</td><td>excavator head + tough handle + tough binding</td><td>Digs 3×3.</td></tr>
+        <tr><td>Broad Axe</td><td>broad axe head + tough handle + tough binding</td><td>Fells whole trees.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">Sneak to mine a single block with heavy tools. Heavy parts cost more: big heads take 8 material, tough handles and bindings take 3.</p>
+  </div>
+</section>
+
+<section id="materials">
+  <div class="wrap">
+    <h2>Materials</h2>
+    <p class="lead">Heads set the base stats, handles multiply them and bindings add a bonus. Every material brings a trait, and traits from several parts stack. <span class="pill cast">cast</span> means the Smeltery is required.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Material</th><th>Head (dur / speed / atk / tier)</th><th>Handle</th><th>Trait</th></tr></thead>
+      <tbody>
+        <tr><td><span class="swatch" style="background:#b98553"></span>Wood</td><td class="num">60 / 2 / 0 / wood</td><td class="num">×1.0</td><td><b>Ecological</b>: slowly repairs itself</td></tr>
+        <tr><td><span class="swatch" style="background:#adb2bc"></span>Stone</td><td class="num">130 / 4 / 1 / stone</td><td>–</td><td><b>Stonebound</b>: mines faster as it wears</td></tr>
+        <tr><td><span class="swatch" style="background:#8e8e98"></span>Flint</td><td class="num">150 / 5 / 1.25 / stone</td><td>–</td><td><b>Jagged</b>: hits harder as it wears</td></tr>
+        <tr><td><span class="swatch" style="background:#fff1cd"></span>Bone</td><td class="num">100 / 4.5 / 1.25 / stone</td><td class="num">×1.1 dur</td><td><b>Resilient</b>: 10% free uses</td></tr>
+        <tr><td><span class="swatch" style="background:#c4dd78"></span>Bamboo</td><td>–</td><td class="num">×0.85 dur, ×1.15 speed</td><td><b>Lightweight</b></td></tr>
+        <tr><td><span class="swatch" style="background:#ffb43c"></span>Blaze rod</td><td>–</td><td class="num">×1.1 speed, ×1.1 atk</td><td><b>Blazing</b>: ignites targets</td></tr>
+        <tr><td><span class="swatch" style="background:#ffaa78"></span>Copper <span class="pill cast">cast</span></td><td class="num">210 / 5 / 1 / stone</td><td class="num">×1.05 dur</td><td><b>Dwarven</b>: faster the deeper you are</td></tr>
+        <tr><td><span class="swatch" style="background:#e7f0f8"></span>Iron <span class="pill cast">cast</span></td><td class="num">280 / 6 / 2 / iron</td><td class="num">×1.35 dur</td><td><b>Magnetic</b>: drops fly to you</td></tr>
+        <tr><td><span class="swatch" style="background:#ffd45c"></span>Gold <span class="pill cast">cast</span></td><td class="num">64 / 12 / 0 / gold</td><td class="num">×1.1 speed</td><td><b>Lustrous</b>: double tool XP</td></tr>
+        <tr><td><span class="swatch" style="background:#ffb9a8"></span>Rose gold <span class="pill cast">cast</span></td><td class="num">200 / 9 / 1 / iron</td><td class="num">×1.05 speed</td><td><b>Enhanced</b>: +1 upgrade slot</td></tr>
+        <tr><td><span class="swatch" style="background:#d9a3f0"></span>Amethyst bronze <span class="pill cast">cast</span></td><td class="num">300 / 6.5 / 1.5 / iron</td><td class="num">×1.1 dur</td><td><b>Crumbling</b>: soft blocks break much faster</td></tr>
+        <tr><td><span class="swatch" style="background:#55f4de"></span>Diamond</td><td class="num">1561 / 8 / 3 / diamond</td><td>–</td><td><b>Sturdy</b>: 10% free uses</td></tr>
+        <tr><td><span class="swatch" style="background:#857784"></span>Netherite <span class="pill cast">cast</span></td><td class="num">2031 / 9 / 4 / netherite</td><td class="num">×1.25 dur, ×1.15 atk</td><td><b>Fireproof</b>: won't burn</td></tr>
+      </tbody>
+    </table></div>
+    <h3 style="margin-top:26px">Bindings &amp; guards</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Material</th><th>Bonus</th><th>Trait</th></tr></thead>
+      <tbody>
+        <tr><td>String</td><td>–</td><td>–</td></tr>
+        <tr><td>Leather</td><td>+15% durability</td><td><b>Tanned</b></td></tr>
+        <tr><td>Honeycomb</td><td>+5% mining speed</td><td><b>Waxed</b></td></tr>
+        <tr><td>Chain</td><td>+10% durability</td><td><b>Reinforced</b>: counts as one level of Reinforced</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<section id="smeltery">
+  <div class="wrap">
+    <h2>Smeltery</h2>
+    <p class="lead">A single block with its own tank. Add fuel and things to melt; metals pool in the tank, alloys mix by themselves, and the selected metal is poured into whatever cast you put in.</p>
+    <div class="grid two">
+      <div class="card">
+        <h3>Melting</h3>
+        <p>Ingots, nuggets, blocks, raw ores and ore blocks. Ores give ×2 (configurable). Old iron, gold and netherite gear melts back down too.</p>
+        <p>Click a metal in the tank to pour it; shift-click to dump it. Hoppers work: items go in the top, fuel in the sides, output comes out the bottom.</p>
+      </div>
+      <div class="card">
+        <h3>Alloys</h3>
+        <p><b>Rose gold</b> = 3 copper + 1 gold</p>
+        <p><b>Amethyst bronze</b> = copper + amethyst</p>
+        <p><b>Netherite</b> = 4 netherite scrap + 4 gold</p>
+      </div>
+      <div class="card">
+        <h3>Casts</h3>
+        <p>Pour gold onto any pattern to make a reusable gold cast of that part (2 ingots). Gold poured onto any ingot makes an ingot cast.</p>
+      </div>
+      <div class="card">
+        <h3>Casting</h3>
+        <p>With a cast in place, the selected metal becomes that part or ingot. With no cast, it's cast into a storage block.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="levels">
+  <div class="wrap">
+    <h2>Levels, slots &amp; expansion braces</h2>
+    <p class="lead">Mining with the right tool or landing a melee hit earns tool XP. New tools have 3 upgrade slots and 1 ability slot.</p>
+    <div class="grid three">
+      <div class="card"><h3>Every level</h3><p>+1 upgrade slot and +2% durability and mining speed. Max level 10 by default.</p></div>
+      <div class="card"><h3>Levels 5 &amp; 10</h3><p>+1 ability slot each.</p></div>
+      <div class="card"><h3>Expansion braces</h3><p>Apply Copper, then Gilded, then Astral at the Tool Station. Each adds an upgrade slot (Astral adds an ability slot too). They're permanent and use no slot.</p></div>
+    </div>
+    <div class="grid three" style="margin-top:16px">
+      <div><span class="recipe">C D C     C copper ingot
+A I A     D diamond
+C D C     A amethyst shard
+          I iron ingot</span><p style="color:var(--muted);font-size:14px">Copper Expansion Brace</p></div>
+      <div><span class="recipe">G E G     G gold ingot
+O I O     E emerald
+G E G     O obsidian
+          I iron block</span><p style="color:var(--muted);font-size:14px">Gilded Expansion Brace</p></div>
+      <div><span class="recipe">A N A     A amethyst bronze ingot
+D I D     N nether star
+A C A     D diamond · I iron block
+          C netherite ingot</span><p style="color:var(--muted);font-size:14px">Astral Expansion Brace</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="modifiers">
+  <div class="wrap">
+    <h2>Modifiers</h2>
+    <p class="lead">Add ingredients at the Tool Station. Many modifiers need several items per level, and partial progress is saved on the tool. Each level takes one slot of its type. A sponge removes the newest modifier. Storage blocks count as 9 items (quartz blocks as 4).</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Modifier</th><th>Slot</th><th>Per level</th><th>Max</th><th>Effect</th></tr></thead>
+      <tbody>
+        <tr><td>Haste</td><td><span class="pill upgrade">upgrade</span></td><td>16 redstone</td><td class="num">5</td><td>+20% mining speed per level</td></tr>
+        <tr><td>Sharpness</td><td><span class="pill upgrade">upgrade</span></td><td>16 quartz</td><td class="num">5</td><td>+0.75 attack damage per level</td></tr>
+        <tr><td>Reinforced</td><td><span class="pill upgrade">upgrade</span></td><td>2 obsidian</td><td class="num">5</td><td>15% chance per level to ignore wear</td></tr>
+        <tr><td>Luck</td><td><span class="pill upgrade">upgrade</span></td><td>32 lapis</td><td class="num">3</td><td>Fortune and Looting</td></tr>
+        <tr><td>Fiery</td><td><span class="pill upgrade">upgrade</span></td><td>12 blaze powder</td><td class="num">2</td><td>Sets targets on fire</td></tr>
+        <tr><td>Knockback</td><td><span class="pill upgrade">upgrade</span></td><td>8 slime balls</td><td class="num">2</td><td>Knocks targets back</td></tr>
+        <tr><td>Magnetic</td><td><span class="pill upgrade">upgrade</span></td><td>1 compass</td><td class="num">1</td><td>Drops fly straight to you</td></tr>
+        <tr><td>Expanded</td><td><span class="pill upgrade">upgrade</span></td><td>4 pistons</td><td class="num">2</td><td>Wider area for heavy tools</td></tr>
+        <tr><td>Diamond</td><td><span class="pill upgrade">upgrade</span></td><td>1 diamond</td><td class="num">1</td><td>+500 durability, small speed/damage boost, diamond tier</td></tr>
+        <tr><td>Emerald</td><td><span class="pill upgrade">upgrade</span></td><td>1 emerald</td><td class="num">1</td><td>+50% head durability, at least iron tier</td></tr>
+        <tr><td>Netherite</td><td><span class="pill upgrade">upgrade</span></td><td>1 netherite ingot</td><td class="num">1</td><td>Needs Diamond. +20% durability, +10% speed, netherite tier, fireproof</td></tr>
+        <tr><td>Silky</td><td><span class="pill ability">ability</span></td><td>1 golden apple</td><td class="num">1</td><td>Silk Touch (not with Luck or Autosmelt)</td></tr>
+        <tr><td>Autosmelt</td><td><span class="pill ability">ability</span></td><td>4 blaze rods</td><td class="num">1</td><td>Smelts what you mine</td></tr>
+        <tr><td>Siphoning</td><td><span class="pill ability">ability</span></td><td>4 ghast tears</td><td class="num">3</td><td>Swords and axes heal you for 5% of melee damage per level</td></tr>
+        <tr><td>Mending</td><td><span class="pill ability">ability</span></td><td>16 bottles o' enchanting</td><td class="num">1</td><td>Repairs itself from XP you pick up</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">Enchanting tables, books and anvil merging don't work on Workshop tools: the Tool Station is the upgrade path. The anvil can still rename them.</p>
+  </div>
+</section>
+
+<section id="bee">
+  <div class="wrap">
+    <div class="grid two" style="align-items:center">
+      <div>
+        <h2>WT BeeBlock Workshop</h2>
+        <p class="lead" style="margin-bottom:16px">A separate optional addon with two hive-themed modifiers: <b>Waxed</b> durability protection and <b>Honeybound</b> slowing hits. Works with vanilla honeycomb and honey bottles, plus Forestry and Productive Bees if installed.</p>
+        <a class="btn ghost" href="beeblock.html">About the addon</a>
+      </div>
+      <img src="img/bee-accents.png" alt="Waxed and Honeybound tool accents on swords and axes" loading="lazy" style="border-radius:10px;border:1px solid var(--line)">
+    </div>
+  </div>
+</section>
+
+<section id="packs">
+  <div class="wrap">
+    <h2>For pack makers &amp; addon authors</h2>
+    <p class="lead">Most balance lives in datapacks and config, so packs can change it without code.</p>
+    <div class="grid two">
+      <div class="card">
+        <h3>Datapack recipe types</h3>
+        <p><code>wt_workshop:material</code> marks an item as a tool material and says how much it counts for (e.g. 9 nuggets = 1).</p>
+        <p><code>wt_workshop:melting</code> defines what an item melts into. Set <code>ore: true</code> to apply the ore multiplier.</p>
+        <p><code>wt_workshop:alloying</code> defines alloys from molten inputs.</p>
+      </div>
+      <div class="card">
+        <h3>Config</h3>
+        <p><code>serverconfig/wt_workshop-server.toml</code> sets slot counts, max level, the XP curve, the per-level bonus, ore multiplier, tank size, tree size, expansion tiers, Siphoning tuning and per-material head durability and speed.</p>
+      </div>
+      <div class="card">
+        <h3>Java addon API</h3>
+        <p>Register namespaced modifiers with <code>net.wtworkshop.api.AddonModifiers</code>. The Tool Station, tooltips, JEI/EMI pages, partial progress, slots and optional per-tool art are handled for you. See <a href="https://github.com/whotevatech/wt-workshop/blob/main/ADDON-API.md">ADDON-API.md</a>. The BeeBlock addon is the worked example.</p>
+      </div>
+      <div class="card">
+        <h3>Recipe viewers</h3>
+        <p>JEI and EMI are optional. When either is installed, WT Workshop adds pages for parts, casting, melting, alloys, modifiers and expansions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <h2>Install &amp; support</h2>
+    <div class="grid two">
+      <div class="card">
+        <h3>Installing</h3>
+        <p>Put the jar in <code>mods</code> on both client and server. Keep only one WT Workshop jar. Back up your world before updating, as this is a beta.</p>
+        <p>Tools and parts from older versions convert automatically when they're in your inventory.</p>
+      </div>
+      <div class="card">
+        <h3>Found a bug?</h3>
+        <p>Open an <a href="https://github.com/whotevatech/wt-workshop/issues">issue on GitHub</a> with your Minecraft, NeoForge and WT Workshop versions, steps to reproduce, and <code>latest.log</code> or the crash report.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>WT Workshop by WT Network · MIT licence · Not affiliated with Mojang or Microsoft.</span>
+    <span><a href="https://github.com/whotevatech/wt-workshop">GitHub</a> · <a href="https://github.com/whotevatech/wt-workshop/releases">Releases</a> · <a href="https://github.com/whotevatech/wt-workshop/blob/main/CHANGELOG.md">Changelog</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

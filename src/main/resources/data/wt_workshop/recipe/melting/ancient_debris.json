@@ -1,0 +1,10 @@
+{
+  "type": "wt_workshop:melting",
+  "ingredient": {
+    "item": "minecraft:ancient_debris"
+  },
+  "molten": "debris",
+  "amount": 90,
+  "time": 240,
+  "ore": true
+}

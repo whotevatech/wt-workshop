@@ -1,0 +1,8 @@
+{
+  "type": "wt_workshop:material",
+  "ingredient": {
+    "item": "minecraft:bone_block"
+  },
+  "material": "bone",
+  "value": 3
+}

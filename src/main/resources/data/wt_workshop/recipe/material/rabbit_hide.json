@@ -1,0 +1,8 @@
+{
+  "type": "wt_workshop:material",
+  "ingredient": {
+    "item": "minecraft:rabbit_hide"
+  },
+  "material": "leather",
+  "needed": 2
+}

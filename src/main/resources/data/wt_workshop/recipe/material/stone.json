@@ -1,0 +1,7 @@
+{
+  "type": "wt_workshop:material",
+  "ingredient": {
+    "tag": "minecraft:stone_tool_materials"
+  },
+  "material": "stone"
+}

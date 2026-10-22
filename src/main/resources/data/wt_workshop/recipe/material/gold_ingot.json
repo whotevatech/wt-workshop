@@ -1,0 +1,7 @@
+{
+  "type": "wt_workshop:material",
+  "ingredient": {
+    "item": "minecraft:gold_ingot"
+  },
+  "material": "gold"
+}

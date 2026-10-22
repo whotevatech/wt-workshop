@@ -1,0 +1,7 @@
+{
+  "type": "wt_workshop:material",
+  "ingredient": {
+    "item": "wt_workshop:amethyst_bronze_ingot"
+  },
+  "material": "amethyst_bronze"
+}
