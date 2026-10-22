@@ -6,6 +6,7 @@
 Build tools from parts, melt and cast metals in a Smeltery, and level your tools up with material traits and modifiers.</p>
 
 <p align="center">
+<a href="https://www.curseforge.com/minecraft/mc-mods/wt-workshop">CurseForge</a> ·
 <a href="https://whotevatech.github.io/wt-workshop/">Website &amp; guide</a> ·
 <a href="https://github.com/whotevatech/wt-workshop/releases">Downloads</a> ·
 <a href="https://github.com/whotevatech/wt-workshop/issues">Issues</a> ·
@@ -33,7 +34,7 @@ Full player guide: **https://whotevatech.github.io/wt-workshop/**
 | `wt-workshop-0.7.0-beta.1.jar` | The mod. Install on client and server. |
 | `wt-beeblock-workshop-0.1.0-beta.1.jar` | Optional [BeeBlock addon](https://whotevatech.github.io/wt-workshop/beeblock.html) (Waxed and Honeybound). Needs WT Workshop 0.7.x. |
 
-Requires Minecraft 1.21.1, NeoForge 21.1.209 or newer, and Java 21. Get both from [Releases](https://github.com/whotevatech/wt-workshop/releases).
+Requires Minecraft 1.21.1, NeoForge 21.1.209 or newer, and Java 21. Get them from CurseForge ([WT Workshop](https://www.curseforge.com/minecraft/mc-mods/wt-workshop), [WT BeeBlock Workshop](https://www.curseforge.com/minecraft/mc-mods/wt-beeblock-workshop), where the app installs WT Workshop for the addon automatically) or from GitHub [Releases](https://github.com/whotevatech/wt-workshop/releases).
 
 ## Building
 
